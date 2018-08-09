@@ -1,0 +1,155 @@
+/* Main Styles */
+* {
+  font-family: "Roboto", helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #298eea;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.splash-page {
+  width: 100%;
+  padding: 40px;
+  margin: auto;
+  border-radius: 3px;
+  background: white;
+}
+
+.splash-page p {
+  width: 100%;
+  line-height: 38px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #565656;
+  text-align: center;
+  letter-spacing: 0;
+  margin: 0 auto 45px;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e7e7e7;
+  border-radius: 3px;
+  height: auto;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+  background: #15CD72;
+  border: 0;
+  cursor: pointer;
+  transition: opacity 0.4s;
+  margin-top: 12px;
+}
+
+.submit-button:hover {
+  background-color: #0CB863;
+}
+
+.dashboard {
+  text-align: center;
+  width: 100%;
+}
+
+.song-artist-form {
+  width: 100%;
+}
+
+fieldset {
+  border: none;
+  margin: 0 auto;
+}
+
+#song-title {
+  background: #565656c0;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+#song-title span {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.artist-box {
+  width: 200px;
+  height: 230px;
+  margin: 0 auto;
+  
+}
+
+.artist-image {
+  width: 100%;
+  border-style: solid;
+  border-color: white;
+}
+
+.artist-name {
+  color: white;
+  font-size: 18px;
+}
+
+.feedback-box {
+  padding: 1px;
+}
+
+.feedback-box p {
+  background: #565656c0;
+  color: white;
+  text-align: center;
+  padding: 11px;
+  width: 100%; 
+  font-size: 18px;
+  margin: 0;
+  padding-bottom: 11px;
+}
+
+#js-final-page {
+  text-align: center;
+  padding: 1px;
+  background: white;
+}
+
+
+#js-final-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+@media (min-width: 600px) {
+  .container {
+    height: 600px;
+    width: 380px;
+    margin: auto; 
+  }
+
+  .song-artist-form {
+    width: 100%;
+  }
+
+  .artist-box {
+    float: left;
+    width: 50%;
+    height: 210px;
+    padding: 2px;
+  }
+  
+  .artist-image {
+    margin-bottom: 1px;
+  }
+}

@@ -13,7 +13,7 @@ function renderSplashPage() {
   wrongCount = 0;
   $('#js-splash-page').empty().append(`
     <p>Given a Song Title, please choose the correct Artist.</p>
-    <button class="submit-button" id="js-submit-button" type="button" tabindex="1">
+    <button class="submit-button" id="js-submit-button" type="button">
       Start Quiz
     </button>
     `).show();
@@ -51,25 +51,25 @@ function renderQuestion() {
 
           <div class="artist-box">
             <img class="artist-image" src="${songs[questionCount].a}" alt="Headshot of ${songs[questionCount].aArtist}">
-            <input type="radio" name="user-answer" id="a" value="a" checked required>
+            <input type="radio" name="user-answer-a" id="a" value="a" checked required>
             <label class="artist-name" for="a">${songs[questionCount].aArtist}</label> 
           </div>
 
           <div class="artist-box">
             <img class="artist-image" src="${songs[questionCount].b}" alt="Headshot of ${songs[questionCount].bArtist}">
-            <input type="radio" name="user-answer" id="b" value="b" required>
+            <input type="radio" name="user-answer-b" id="b" value="b" required>
             <label class="artist-name" for="b">${songs[questionCount].bArtist}</label>
           </div>
 
           <div class="artist-box">
             <img class="artist-image" src="${songs[questionCount].c}" alt="Headshot of ${songs[questionCount].cArtist}">
-            <input type="radio" name="user-answer" id="c" value="c" required>
+            <input type="radio" name="user-answer-c" id="c" value="c" required>
             <label class="artist-name" for="c">${songs[questionCount].cArtist}</label>
           </div>
 
           <div class="artist-box"> 
             <img class="artist-image" src="${songs[questionCount].d}" alt="Headshot of ${songs[questionCount].dArtist}">
-            <input type="radio" name="user-answer" id="d" value="d" required>
+            <input type="radio" name="user-answer-d" id="d" value="d" required>
             <label class="artist-name" for="d">${songs[questionCount].dArtist}</label>
           </div>
 
@@ -92,7 +92,7 @@ function renderFeedbackCorrect() {
   $('#js-feedback-page').empty().append(`
     <div class="feedback-box">
       <p>You got it right!</p>
-      <button class="submit-button" id="js-next-button" type="button" tabindex="1">
+      <button class="submit-button" id="js-next-button" type="button">
         Next Question
       </button>
     </div>
@@ -106,7 +106,7 @@ function renderFeedbackWrong() {
     <div class="feedback-box">
       <p>You got it wrong!</p>
       <p>The correct answer was ${songs[questionCount].correctArtist}.</p>
-      <button class="submit-button" id="js-next-button" type="button" tabindex="1">
+      <button class="submit-button" id="js-next-button" type="button">
         Next Question
       </button>
     </div>
@@ -124,7 +124,7 @@ function renderFinalPage() {
       <li>Number correct: ${scoreCount}</li>
       <li>Number wrong: ${wrongCount}</li>
     </ul>
-    <button class="submit-button" id="js-resart-button" type="button" tabindex="1">
+    <button class="submit-button" id="js-resart-button" type="button">
       Restart Quiz
     </button>
   `).show();

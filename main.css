@@ -5,7 +5,6 @@
 }
 
 body {
-  background: #298eea;
   margin: 0;
 }
 
@@ -99,7 +98,7 @@ fieldset {
 }
 
 .artist-name {
-  color: white;
+  color: black;
   font-size: 18px;
 }
 
